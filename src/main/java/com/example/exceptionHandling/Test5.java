@@ -17,6 +17,8 @@ public class Test5
         } catch (ArithmeticException e) {
            // throw new ArithmeticException("Cant Divide By 0");
             throw e;
+        }finally {
+            System.out.println("Finally Block Executed");
         }
     }
 }
