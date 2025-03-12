@@ -16,10 +16,14 @@ public class Test2
             System.out.println(add);
 
             int a = 10;
-            int b = 0;
+         //   int b = 0;
+            int b=2;
 
             int result = a/b;
             System.out.println(result);
+
+            String str = null;
+            System.out.println("Length : "+str.length());
 
         } catch (ArithmeticException e) {
             System.out.println("Exception: "+e.getMessage());
@@ -27,6 +31,8 @@ public class Test2
             System.out.println("Exception: "+e.getMessage());
         } catch (NumberFormatException e){
             System.out.println("Provide Integer Value ");
+        } catch (Exception e) {
+            System.out.println("Generic Exception");
         }
 
         System.out.println("End Of Execution");
