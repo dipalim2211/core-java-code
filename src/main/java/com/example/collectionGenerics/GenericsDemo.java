@@ -1,4 +1,4 @@
-package com.example.collectionAll;
+package com.example.collectionGenerics;
 
 //Without Generics
 
