@@ -11,6 +11,8 @@ public class BTreeSetDemo {
 
     public static void main(String[] args) {
 
+        System.out.println("Input : 10 20 10 50 30 60");
+
         Set<Integer> number1 = new TreeSet<>();     //By Default : Ascending
         number1.add(10);
         number1.add(20);

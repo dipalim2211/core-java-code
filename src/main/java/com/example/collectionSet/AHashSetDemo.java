@@ -9,6 +9,8 @@ public class AHashSetDemo {
 
     public static void main(String[] args) {
 
+        System.out.println("Input : 10 20 10 50 30 60");
+
         List<Integer> l1 = new ArrayList<>();
         l1.add(10);
         l1.add(20);
