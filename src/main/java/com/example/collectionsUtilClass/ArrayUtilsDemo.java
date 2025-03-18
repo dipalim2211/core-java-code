@@ -19,7 +19,7 @@ public class ArrayUtilsDemo {
 
         System.out.println();
 
-
+        System.out.println();
 
         Arrays.sort(a1);
         System.out.println("Arrays.sort(a1) : "+Arrays.toString(a1));
