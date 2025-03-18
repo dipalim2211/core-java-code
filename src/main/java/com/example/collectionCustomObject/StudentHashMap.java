@@ -1,4 +1,4 @@
-package com.example.collectionMap;
+package com.example.collectionCustomObject;
 
 import java.util.*;
 /*
@@ -43,7 +43,11 @@ public class StudentHashMap {
 
     public static void main(String[] args) {
 
+        System.out.println("Custom Object Using List\n");
+
         List<Student> student1 = new ArrayList<>();
+
+        //Pass Object of student
         student1.add(new Student(1, 10, "A"));
         student1.add(new Student(2, 15, "B"));
         student1.add(new Student(3, 10, "C"));
@@ -51,18 +55,42 @@ public class StudentHashMap {
 
         //Iterate Over Collection:Read Purpose
         for (Student s1 : student1) {
-            System.out.println(s1);
+            System.out.println(s1);     //toString Method of Student called
         }
 
         System.out.println();
 
-        //Specify Print Option : Name and Age
+        System.out.println("Specify Print Option : Name and Age");
 
         for (Student s2 : student1) {
             System.out.println(s2.getName() + "  " + s2.getAge());
         }
 
         System.out.println();
+//------------------------------------------------------------------------
+        System.out.println("Custom Object Using Set\n");
+
+        Set<Student> student2 = new HashSet<>();
+
+        student2.add(new Student(11, 10, "AA"));
+        student2.add(new Student(12, 15, "BB"));
+        student2.add(new Student(13, 10, "CC"));
+        student2.add(new Student(14, 20, "DD"));
+
+        for (Student s1 : student2) {
+            System.out.println(s1);
+        }
+
+        System.out.println();
+
+        System.out.println("Specify Print Option : Name and Age");
+
+        for (Student s2 : student2) {
+            System.out.println(s2.getName() + "  " + s2.getAge());
+        }
+
+        System.out.println();
+//------------------------------------------------------
 
         //Iterator : Modify Collection while iterating
 
@@ -70,7 +98,6 @@ public class StudentHashMap {
 
         //student1.iterator() - call iterator method on student object
         //Return iterator Object
-
 
         while (itr1.hasNext())  //return true : if element present
         {
