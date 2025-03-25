@@ -96,7 +96,7 @@ public class DateExample {
         //7. of method
 
         LocalDate date1 = LocalDate.of(2025,05,25);
-        LocalDate date2 = LocalDate.of(2025,05,25);
+        LocalDate date2 = LocalDate.of(2025,17,25);
 
         if(date1.isAfter(date2))
         {
@@ -109,7 +109,7 @@ public class DateExample {
 
         System.out.println();
 
-        
+
 
     }
 
